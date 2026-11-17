@@ -1,0 +1,30 @@
+{
+    "filament_cost": [
+        "51.99"
+    ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "filament_max_volumetric_speed": [
+        "6"
+    ],
+    "filament_settings_id": [
+        "Filaform ASA CF @Bambu Lab X1E 0.4 nozzle"
+    ],
+    "from": "User",
+    "inherits": "Filaform ASA @Bambu Lab X1E 0.4 nozzle",
+    "name": "Filaform ASA CF @Bambu Lab X1E 0.4 nozzle",
+    "nozzle_temperature": [
+        "280"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "280"
+    ],
+    "textured_plate_temp": [
+        "100"
+    ],
+    "textured_plate_temp_initial_layer": [
+        "100"
+    ],
+    "version": "1.9.0.18"
+}
