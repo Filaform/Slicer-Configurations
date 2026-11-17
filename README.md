@@ -21,7 +21,7 @@ The part after the `@` is the machine. That is how the website builds a download
 
 ## Supported machines
 
-**Bambu Studio** (0.4 mm nozzle): A1 mini, A1, A2L, P1P, P1S, P2S, X1, X1 Carbon, X1E, X2D, H2S, H2D, H2D Pro, H2C.
+**Bambu Studio** (0.4 mm nozzle): A1 mini, A1, A2L, P1P, P1S, P2S, X1, X1 Carbon, X1E, X2D, H2S, H2D, H2D Pro, H2C, H3C.
 
 **PrusaSlicer 2.9.x** (0.4 mm, standard and high-flow where Prusa offers both):
 
@@ -34,6 +34,7 @@ The part after the `@` is the machine. That is how the website builds a download
 | `@XL`, `@XL HF0.4` | Original XL Input Shaper |
 | `@MINIIS` | MINI, MINI+ Input Shaper |
 | `@MK3.5` | MK3.5, MK3.5S |
+| `@MK3S+` | MK3S, MK3S+ (without MMU) |
 
 The PrusaSlicer presets build on Prusa Research's own profile for each machine. Filaform supplies the nozzle temperature, flow, density and volumetric limit. Bed temperature is 60 °C or higher on every preset, to suit Filaform Adhesive Spray.
 
