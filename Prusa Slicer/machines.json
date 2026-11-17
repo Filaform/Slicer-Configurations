@@ -1,0 +1,69 @@
+[
+  {
+    "slug": "core-one",
+    "label": "Prusa CORE One, One+, One L, Signature Oak",
+    "suffixes": [
+      "COREONE",
+      "COREONE HF0.4"
+    ],
+    "file": "filaform-core-one-prusaslicer-profiles.ini",
+    "presets": 19
+  },
+  {
+    "slug": "core-one-indx",
+    "label": "Prusa CORE One INDX (4T, 8T)",
+    "suffixes": [
+      "COREONEINDX HF0.4"
+    ],
+    "file": "filaform-core-one-indx-prusaslicer-profiles.ini",
+    "presets": 11
+  },
+  {
+    "slug": "mk4s",
+    "label": "Original Prusa MK4S, MK3.9S",
+    "suffixes": [
+      "MK4S",
+      "MK4S HF0.4"
+    ],
+    "file": "filaform-mk4s-prusaslicer-profiles.ini",
+    "presets": 19
+  },
+  {
+    "slug": "xl-plus",
+    "label": "Prusa XL+ (1, 2, 5 tool)",
+    "suffixes": [
+      "XL+",
+      "XL+ HF0.4"
+    ],
+    "file": "filaform-xl-plus-prusaslicer-profiles.ini",
+    "presets": 19
+  },
+  {
+    "slug": "xl",
+    "label": "Original Prusa XL Input Shaper (1, 2, 5 tool)",
+    "suffixes": [
+      "XL",
+      "XL HF0.4"
+    ],
+    "file": "filaform-xl-prusaslicer-profiles.ini",
+    "presets": 19
+  },
+  {
+    "slug": "mini",
+    "label": "Original Prusa MINI, MINI+ Input Shaper",
+    "suffixes": [
+      "MINIIS"
+    ],
+    "file": "filaform-mini-prusaslicer-profiles.ini",
+    "presets": 11
+  },
+  {
+    "slug": "mk3-5",
+    "label": "Original Prusa MK3.5, MK3.5S",
+    "suffixes": [
+      "MK3.5"
+    ],
+    "file": "filaform-mk3-5-prusaslicer-profiles.ini",
+    "presets": 7
+  }
+]
