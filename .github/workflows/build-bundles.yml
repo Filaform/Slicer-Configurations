@@ -1,0 +1,45 @@
+name: Build profile bundles
+
+# Rebuilds the downloadable bundles whenever an individual preset changes,
+# and publishes them to the "dist" branch. Edit presets on main, never the bundles.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Bambu Studio/presets/**'
+      - 'Prusa Slicer/presets/**'
+      - 'Prusa Slicer/machines.json'
+      - 'scripts/build_bundles.py'
+      - '.github/workflows/build-bundles.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-bundles
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build bundles
+        run: python3 scripts/build_bundles.py "$RUNNER_TEMP/dist"
+
+      - name: Publish to dist branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd "$RUNNER_TEMP/dist"
+          cp "$GITHUB_WORKSPACE/LICENSE" .
+          printf 'Built automatically from the presets on the main branch.\nDo not edit these files. Edit the presets on main instead.\n' > README.md
+          git init -q -b dist
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Build bundles from ${GITHUB_SHA::7}"
+          git push --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" dist
