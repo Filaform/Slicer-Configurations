@@ -22,7 +22,7 @@ OUT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, '
 PRUSA_MATERIALS = ['Tough PLA+ V3', 'Naked PLA', 'Silk PLA', 'Galaxy PLA', 'Glitter PLA', 'Tough PETG',
                    'Naked PETG Matte', 'PETG-CF', 'ABS', 'ASA', 'TPU 95A']
 PRUSA_MACHINES = ['COREONE', 'COREONE HF0.4', 'COREONEINDX HF0.4', 'MK4S', 'MK4S HF0.4', 'XL+', 'XL+ HF0.4',
-                  'XL', 'XL HF0.4', 'MINIIS', 'MK3.5']
+                  'XL', 'XL HF0.4', 'MINIIS', 'MK3.5', 'MK3S+']
 PRUSA_HEADER = ('# Filaform filament profiles for PrusaSlicer\n'
                 '# For PrusaSlicer 2.9.x. Import with File > Import > Import Config Bundle.\n'
                 '# Each preset builds on the matching Prusa Research system profile (vendor config 2.5.16).\n'
